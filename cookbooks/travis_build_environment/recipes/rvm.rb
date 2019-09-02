@@ -55,19 +55,11 @@ packages = value_for_platform_family(
     sqlite3
     zlib1g
     zlib1g-dev
-  ]
-)
-
-packages.each do |p|
-  package p do
+  ]do
     action :install
-    case node[:platform]
-    when 'ubuntu'
-      options '--no-install-recommends --no-upgrade'
-    end
-  end
-end
-
+    options '--no-install-recommends --no-upgrade'
+   end
+)
 gpg_keys.each do |name, checksum|
   key_path = gpg_key_path(name)
 
