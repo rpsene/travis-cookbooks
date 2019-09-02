@@ -27,8 +27,7 @@ global_gems = Array(
   node['travis_build_environment']['global_gems']
 ).map { |g| g[:name] }.join(' ')
 
-packages = value_for_platform_family(
-  'ubuntu' => %w[
+package %w[
     automake
     bash
     bison
@@ -59,7 +58,7 @@ packages = value_for_platform_family(
     action :install
     options '--no-install-recommends --no-upgrade'
    end
-)
+
 gpg_keys.each do |name, checksum|
   key_path = gpg_key_path(name)
 
