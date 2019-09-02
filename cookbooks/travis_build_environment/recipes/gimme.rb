@@ -34,7 +34,7 @@ def obtain_gimme_url
   #request['Authorization'] = "token #{token}" if token
   #response = http.request(request)
   #tag = JSON.parse(response.body).fetch('tag_name')
-  https://raw.githubusercontent.com/travis-ci/gimme/v1.5.3/gimme
+  "https://raw.githubusercontent.com/travis-ci/gimme/v1.5.3/gimme"
 end
 
 gimme_url = obtain_gimme_url
