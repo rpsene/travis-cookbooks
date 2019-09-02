@@ -55,11 +55,6 @@ packages = value_for_platform_family(
     sqlite3
     zlib1g
     zlib1g-dev
-  ],
-  'freebsd' => %w[
-    curl
-    bash
-    gnupg
   ]
 )
 
