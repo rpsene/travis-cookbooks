@@ -238,7 +238,7 @@ default['travis_build_environment']['gradle_checksum'] = '4953323605c5d7b89e97d0
 default['travis_build_environment']['lein_url'] = 'https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein'
 
 default['travis_build_environment']['sysctl_kernel_shmmax'] = 45_794_432
-default['travis_build_environment']['sysctl_disable_ipv6'] = true
+#default['travis_build_environment']['sysctl_disable_ipv6'] = true
 default['travis_build_environment']['sysctl_enable_ipv4_forwarding'] = true
 
 maven_version = '3.6.2'
